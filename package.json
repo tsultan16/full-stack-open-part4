@@ -4,9 +4,9 @@
   "description": "My solutions for Full Stack open part 4 exercises.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js",
-    "test": "node --test"
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development node --watch index.js",
+    "test": "NODE_ENV=test node --test"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,13 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
     "mongoose": "^8.10.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "^9.20.1",
-    "globals": "^15.15.0"
+    "globals": "^15.15.0",
+    "supertest": "^7.0.0"
   }
 }
